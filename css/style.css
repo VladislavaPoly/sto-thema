@@ -1,0 +1,190 @@
+/* Тело и его общие части */
+body {
+    font-family: 'Comfortaa', cursive;
+}
+
+section:not(.form) h2 {
+    text-align: center;
+}
+
+    /* Шапка */
+header {
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    background-image: url(https://st4.depositphotos.com/2297123/25568/i/450/depositphotos_255685258-stock-photo-smoke-dark-empty-black-rectangle.jpg);
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: left;
+}
+
+header > img {
+    width: 100px;
+}
+
+.neon {
+color: #fff;
+text-shadow:
+      0 0 1px #fff,
+      0 0 2px #fff,
+      0 0 5px #fff,
+      0 0 11px #00aaff,
+      0 0 20px #00aaff,
+      0 0 30px #00aaff,
+      0 0 55px #00aaff,
+      0 0 80px #00aaff;
+}
+
+.neon2 {
+    color: #fff;
+    text-shadow:
+          0 0 1px #fff,
+          0 0 2px #fff,
+          0 0 5px #fff,
+          0 0 11px #f530ff,
+          0 0 20px #f530ff,
+          0 0 30px #f530ff,
+          0 0 55px #f530ff,
+          0 0 80px #f530ff;
+    }
+
+nav {
+width: 40%;
+justify-content: space-between;
+display: flex;
+margin-top: 2.5em;
+padding-left: 4.5%;
+}
+
+.burger {
+display: none;
+}
+
+header ul {
+display: flex;
+list-style-type: none;
+margin-top: 3px;
+margin-right: 6px;
+margin-bottom: 0px;
+justify-content: space-between;
+}
+header li {
+margin-top: auto;
+margin-bottom: auto;
+}
+
+#phoneimg {
+height: 46px;
+}
+
+#mailimg {
+height: 40px;
+}
+
+/* Реклама */
+.ad {
+    border: 2px black solid;
+    height: 23em;
+}
+/* Акции */
+.promoitself {
+    justify-content: space-around;
+    display: flex;
+}
+
+.promoitself div {
+    border: 2px solid black;
+}
+
+/* Популярные услуги */
+.services {
+    justify-content: space-evenly;
+    display: flex;
+}
+
+/* Миниформа */
+aside {
+border: 2px solid black;
+width: 11%;
+text-align: center;
+position: fixed;
+}
+
+aside img {
+    width: 130px;
+    height: 130px;
+}
+
+aside a{
+    
+}
+
+/* Достижения */
+.about {
+    display: flex;
+
+}
+
+.progress {
+    margin: 0 5%; 
+    width: 40%; 
+}
+
+.reviews {
+    margin: 0 5%;
+    width: 60%;
+}
+
+/* Форма */
+.form {
+display: flex;
+justify-content: space-between;
+}
+
+.form div {
+width: 50%;
+}
+
+.form h2 {
+width: 50%;
+text-align: center;
+padding: 4%;
+}
+
+/* Подвал */
+footer img {
+    width: 80px;
+    height: 80px;
+}
+
+/* Адаптивная верстка */
+@media screen and (max-width: 700px) {
+    nav {
+        display: none;
+    }
+    .burger {
+        display: flex;
+        padding-left: 1em;
+        margin-top: auto; 
+        margin-bottom: auto;
+        justify-content: center;
+    }
+    .burger img {
+        height: 40px;
+    }
+    .burger a {
+        margin-top: auto;
+        margin-bottom: auto;
+        padding-left: 5px;
+    }
+    #phoneimg {
+        height: 38px;
+    }
+    #mailimg {
+        height: 30px;
+    }
+    header ul {
+        margin-top: 9px;
+    }
+}
