@@ -153,10 +153,20 @@ padding: 4%;
 }
 
 /* Подвал */
-footer img {
-    width: 80px;
-    height: 80px;
+footer {
+    background-color: black;
+    color: #bf00ff;
+    justify-content: space-between;
+    display: flex;
+    height: fit-content;
 }
+
+footer img {
+    width: 70px;
+    height: 70px;
+}
+
+
 
 /* Адаптивная верстка */
 @media screen and (max-width: 700px) {
