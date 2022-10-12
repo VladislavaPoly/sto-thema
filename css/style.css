@@ -1,6 +1,9 @@
 /* Тело и его общие части */
 body {
     font-family: 'Comfortaa', cursive;
+    margin: 0%;
+    background-color: black;
+    color: white;
 }
 
 section:not(.form) h2 {
@@ -21,6 +24,7 @@ header {
 
 header > img {
     width: 100px;
+    padding-left: 1%;
 }
 
 .neon {
@@ -36,7 +40,7 @@ text-shadow:
       0 0 80px #00aaff;
 }
 
-.neon2 {
+.neon2, h4 {
     color: #fff;
     text-shadow:
           0 0 1px #fff,
@@ -47,14 +51,40 @@ text-shadow:
           0 0 30px #f530ff,
           0 0 55px #f530ff,
           0 0 80px #f530ff;
-    }
+} 
+
+.neon3 {
+    color: #fff;
+    text-shadow:
+          0 0 1px #fff,
+          0 0 2px #fff,
+          0 0 5px #fff,
+          0 0 10px #6562f8,
+          0 0 17px #4769ff,
+          0 0 23px #a556ff,
+          0 0 48px #b163f1,
+          0 0 60px #a15ce0;
+}
+
+.neon4 {
+    color: #fff;
+    text-shadow:
+          0 0 1px #fff,
+          0 0 2px #fff,
+          0 0 5px #fff,
+          0 0 11px #00ffff,
+          0 0 20px #00ffff,
+          0 0 30px #00aaff,
+          0 0 55px #00aaff,
+          0 0 80px #00aaff;
+}
 
 nav {
 width: 40%;
 justify-content: space-between;
 display: flex;
 margin-top: 2.5em;
-padding-left: 4.5%;
+padding-left: 6.5%;
 }
 
 .burger {
@@ -67,11 +97,13 @@ list-style-type: none;
 margin-top: 3px;
 margin-right: 6px;
 margin-bottom: 0px;
-justify-content: space-between;
+padding-left: 0%;
 }
+
 header li {
 margin-top: auto;
 margin-bottom: auto;
+margin-left: 5%;
 }
 
 #phoneimg {
@@ -109,6 +141,7 @@ border: 2px solid black;
 width: 11%;
 text-align: center;
 position: fixed;
+top: 70%;
 }
 
 aside img {
@@ -123,7 +156,9 @@ aside a{
 /* Достижения */
 .about {
     display: flex;
-
+    height: 25em;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9TDws7I8onkOP9WY5O5FFPipzJD1mLp8_kom3wY8KeVH9Pz857MHLZC3hjTvAauq36NM&usqp=CAU);
+    background-size: 50% 100%;
 }
 
 .progress {
@@ -131,15 +166,38 @@ aside a{
     width: 40%; 
 }
 
+.progress ul {
+    line-height: 3em;
+}
+
+h4 {
+    padding-left: 6em;
+    padding-top: 1em;
+}
+
 .reviews {
     margin: 0 5%;
     width: 60%;
+    background-image: url(https://amiel.club/uploads/posts/2022-10/1664897738_5-amiel-club-p-neonovaya-stena-instagram-5.png);
+    background-size: 100% 140%;
+    background-position: center;
+    border: 1px solid black;
+    box-shadow: 3px 0 3px 0 black;
+}
+
+.reviews p {
+    padding: 1.5em 6em;
+}
+
+.reviews a {
+    padding-left: 22em;
 }
 
 /* Форма */
 .form {
 display: flex;
 justify-content: space-between;
+height: 25em;
 }
 
 .form div {
@@ -155,18 +213,30 @@ padding: 4%;
 /* Подвал */
 footer {
     background-color: black;
-    color: #bf00ff;
+    color: #ffffff;
     justify-content: space-between;
     display: flex;
     height: fit-content;
+    box-shadow: #4769ff 0 3px 20px ;
 }
 
 footer img {
+    padding-top: 3%;
     width: 70px;
     height: 70px;
 }
 
+footer>p {
+    margin-left: 6px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
 
+.contacts {
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+}
 
 /* Адаптивная верстка */
 @media screen and (max-width: 700px) {
@@ -196,5 +266,17 @@ footer img {
     }
     header ul {
         margin-top: 9px;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    footer img {
+        width: 50px;
+        height: 50px;
+        padding-top: 6%;
+    }
+
+    footer {
+        font-size: small;
     }
 }
