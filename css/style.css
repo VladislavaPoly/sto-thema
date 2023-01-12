@@ -1,6 +1,8 @@
 /* Тело и его общие части */
 body {
     font-family: 'Comfortaa', cursive;
+    background-color: black;
+    color: #ffffff;
 }
 
 section:not(.form) h2 {
@@ -12,7 +14,7 @@ header {
     display: flex;
     justify-content: space-between;
     height: 100px;
-    background-image: url(https://st4.depositphotos.com/2297123/25568/i/450/depositphotos_255685258-stock-photo-smoke-dark-empty-black-rectangle.jpg);
+    background-image: url(../img/smoke-neon.jpg);
     background-color: black;
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -26,14 +28,14 @@ header > img {
 .neon {
 color: #fff;
 text-shadow:
-      0 0 1px #fff,
       0 0 2px #fff,
-      0 0 5px #fff,
-      0 0 11px #00aaff,
-      0 0 20px #00aaff,
-      0 0 30px #00aaff,
-      0 0 55px #00aaff,
-      0 0 80px #00aaff;
+      0 0 2px #fff,
+      0 0 20px #fff,
+      0 0 12px #0051ff,
+      0 0 25px #4144ff,
+      0 0 32px #008cff,
+      0 0 60px #43c0ff,
+      0 0 110px #5fc3f5;
 }
 
 .neon2 {
@@ -47,6 +49,19 @@ text-shadow:
           0 0 30px #f530ff,
           0 0 55px #f530ff,
           0 0 80px #f530ff;
+    }
+
+.neon3 {
+    color: #fff;
+    text-shadow:
+          0 0 1px #fff,
+          0 0 2px #fff,
+          0 0 5px #fff,
+          0 0 11px #01eeff,
+          0 0 20px #01ffea,
+          0 0 30px #01ffc8,
+          0 0 55px #01ffc8,
+          0 0 80px #01ffc8;
     }
 
 nav {
@@ -84,31 +99,65 @@ height: 40px;
 
 /* Реклама */
 .ad {
-    border: 2px black solid;
+    border: 2px rgb(250, 249, 249) solid;
     height: 23em;
 }
 /* Акции */
+.promo {
+    height: 18em;
+}
+
 .promoitself {
-    justify-content: space-around;
+    /* justify-content: center; */
     display: flex;
 }
 
 .promoitself div {
-    border: 2px solid black;
+    width: 25%;
+    height: 15em;
+    background-image: url(../img/transparent-square-frame-with-neon-glow_136469-748.webp);
+    background-size: 100% 100%;
 }
+
+.promo, .popular {
+    color: #fff;
+    text-shadow:
+          0 0 1px #fff,
+          0 0 2px #fff,
+          0 0 5px #fff,
+          0 0 11px #fc2a7a,
+          0 0 25px #ff30b0,
+          0 0 30px #ff30b0,
+          0 0 55px #ff30b0,
+          0 0 90px #ff30b0;
+}
+
+/* .promoitself div img, .promoitself div p {
+    justify-content: center;
+} */
+
+/* .a1, .a2,.a3,.a4 {
+    justify-content: center;
+    display: flex;
+} */
 
 /* Популярные услуги */
 .services {
     justify-content: space-evenly;
     display: flex;
+    height: 18em;
+    background-image: url(../img/1643194677_1-phonoteka-org-p-krasivii-neonovii-fon-1.jpg);
+    background-size: 33% 100%;
 }
 
 /* Миниформа */
 aside {
-border: 2px solid black;
-width: 11%;
+border: 2px solid rgb(253, 252, 252);
+width: 10%;
+height: 11em;
 text-align: center;
 position: fixed;
+top: 38em;
 }
 
 aside img {
@@ -116,14 +165,13 @@ aside img {
     height: 130px;
 }
 
-aside a{
-    
-}
 
 /* Достижения */
 .about {
     display: flex;
-
+    height: 40em;
+    background-image: url(../img/1616979248_28-p-sinii-neonovii-fon-29.jpg);
+    background-size: 75% 100%;
 }
 
 .progress {
@@ -132,14 +180,17 @@ aside a{
 }
 
 .reviews {
-    margin: 0 5%;
-    width: 60%;
+    margin: 0 9%;
+    width: 70%;
+    background-image: url(../img/1664897738_5-amiel-club-p-neonovaya-stena-instagram-5.png);
+    background-size: 100% 100%;
 }
 
 /* Форма */
 .form {
 display: flex;
 justify-content: space-between;
+height: 30em;
 }
 
 .form div {
@@ -153,10 +204,20 @@ padding: 4%;
 }
 
 /* Подвал */
-footer img {
-    width: 80px;
-    height: 80px;
+footer {
+    background-color: black;
+    color: #bf00ff;
+    justify-content: space-between;
+    display: flex;
+    height: fit-content;
 }
+
+footer img {
+    width: 70px;
+    height: 70px;
+}
+
+
 
 /* Адаптивная верстка */
 @media screen and (max-width: 700px) {
