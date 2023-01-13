@@ -3,6 +3,8 @@ body {
     font-family: 'Comfortaa', cursive;
     background-color: black;
     color: #ffffff;
+    margin: 0px;
+    cursor: url(../icons/3D/pointer\ 2.png), default;
 }
 
 section:not(.form) h2 {
@@ -107,8 +109,11 @@ height: 40px;
     height: 18em;
 }
 
+.promo p {
+    margin: 0%;
+}
+
 .promoitself {
-    /* justify-content: center; */
     display: flex;
 }
 
@@ -117,6 +122,7 @@ height: 40px;
     height: 15em;
     background-image: url(../img/transparent-square-frame-with-neon-glow_136469-748.webp);
     background-size: 100% 100%;
+    text-align: center;
 }
 
 .promo, .popular {
@@ -132,14 +138,12 @@ height: 40px;
           0 0 90px #ff30b0;
 }
 
-/* .promoitself div img, .promoitself div p {
-    justify-content: center;
-} */
+.promo img {
+    width: 150px;
+    height: 150px;
+    padding-top: 5%;
+}
 
-/* .a1, .a2,.a3,.a4 {
-    justify-content: center;
-    display: flex;
-} */
 
 /* Популярные услуги */
 .services {
@@ -175,15 +179,46 @@ aside img {
 }
 
 .progress {
-    margin: 0 5%; 
+    margin-left: 6%; 
+    margin-top: 5%;
     width: 40%; 
+    font-size: large;
 }
 
 .reviews {
     margin: 0 9%;
+    padding: 6% 8%;
     width: 70%;
     background-image: url(../img/1664897738_5-amiel-club-p-neonovaya-stena-instagram-5.png);
     background-size: 100% 100%;
+    border: #000000 solid 1px;
+    box-shadow: 2px -2px 80px 15px black;
+}
+
+.about h4 {
+    font-size: x-large;
+}
+
+.reviews h4 {
+    margin-bottom: 11%;
+    margin-top: 0%;
+}
+
+.reviews p:nth-child(2) {
+    padding: 8% 0;
+    margin: 0%;
+}
+
+.reviews p:nth-child(3) {
+    text-align: end;
+    padding: 5% 0;
+    margin: 0%;
+}
+
+.reviews p:last-child {
+    font-size: larger;
+    text-align: center;
+    padding-top: 11%;
 }
 
 /* Форма */
