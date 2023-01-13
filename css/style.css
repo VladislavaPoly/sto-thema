@@ -199,7 +199,17 @@ aside img {
     font-size: x-large;
 }
 
-.reviews h4 {
+.reviews span {
+    font-size: x-large;
+}
+
+.reviews img {
+    width: 35px;
+    height: 25px;
+}
+
+.reviews p:first-child {
+    display: flex;
     margin-bottom: 11%;
     margin-top: 0%;
 }
